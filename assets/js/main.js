@@ -93,3 +93,66 @@ if ('IntersectionObserver' in window && pageAnchors.length) {
 
   pageAnchors.forEach((section) => observer.observe(section));
 }
+
+
+function initCarousel() {
+  const carousel = document.querySelector('[data-carousel]');
+  if (!carousel) return;
+
+  const slides = Array.from(carousel.querySelectorAll('[data-slide]'));
+  const dots = Array.from(carousel.querySelectorAll('[data-dot]'));
+  const prev = carousel.querySelector('[data-prev]');
+  const next = carousel.querySelector('[data-next]');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer;
+
+  function showSlide(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('active', slideIndex === current);
+    });
+    dots.forEach((dot, dotIndex) => {
+      const active = dotIndex === current;
+      dot.classList.toggle('active', active);
+      dot.setAttribute('aria-selected', String(active));
+    });
+  }
+
+  function startAuto() {
+    stopAuto();
+    timer = window.setInterval(() => showSlide(current + 1), 4500);
+  }
+
+  function stopAuto() {
+    if (timer) window.clearInterval(timer);
+  }
+
+  prev?.addEventListener('click', () => {
+    showSlide(current - 1);
+    startAuto();
+  });
+
+  next?.addEventListener('click', () => {
+    showSlide(current + 1);
+    startAuto();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+      startAuto();
+    });
+  });
+
+  carousel.addEventListener('mouseenter', stopAuto);
+  carousel.addEventListener('mouseleave', startAuto);
+  carousel.addEventListener('focusin', stopAuto);
+  carousel.addEventListener('focusout', startAuto);
+
+  showSlide(0);
+  startAuto();
+}
+
+initCarousel();
