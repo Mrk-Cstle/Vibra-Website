@@ -156,3 +156,59 @@ function initCarousel() {
 }
 
 initCarousel();
+
+//video play/pause on scroll
+// =================================
+// CLICKABLE HERO VIDEO
+// =================================
+
+document.addEventListener("DOMContentLoaded", function () {
+    const videoContainer = document.querySelector(".hero-video-container");
+    const video = document.getElementById("heroVideo");
+    const playButton = document.getElementById("heroPlayButton");
+    const overlay = document.getElementById("heroVideoOverlay");
+
+    if (!videoContainer || !video || !playButton || !overlay) {
+        return;
+    }
+
+    function updateVideoState() {
+        const isPlaying = !video.paused && !video.ended;
+
+        videoContainer.classList.toggle("is-playing", isPlaying);
+
+        if (isPlaying) {
+            playButton.setAttribute("aria-label", "Pause stockyard video");
+        } else {
+            playButton.setAttribute("aria-label", "Play stockyard video");
+        }
+    }
+
+    async function toggleVideo() {
+        if (video.paused || video.ended) {
+            try {
+                await video.play();
+            } catch (error) {
+                console.error("Unable to play hero video:", error);
+            }
+        } else {
+            video.pause();
+        }
+    }
+
+    playButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        toggleVideo();
+    });
+
+    video.addEventListener("click", toggleVideo);
+
+    video.addEventListener("play", updateVideoState);
+    video.addEventListener("pause", updateVideoState);
+    video.addEventListener("ended", updateVideoState);
+
+    // Restore the preview and play button when playback ends.
+    video.addEventListener("ended", function () {
+        videoContainer.classList.remove("is-playing");
+    });
+});

@@ -1283,3 +1283,264 @@ main section[id] {
         height: 80px;
     }
 }
+
+/* //for coal storage facility */
+/* ================================
+   COAL STORAGE FACILITY / STOCKYARDS
+================================ */
+
+/* Stockyard Gallery */
+.stockyard-gallery {
+    margin-top: 2.5rem;
+    width: 100%;
+}
+
+.stockyard-gallery-head {
+    margin-bottom: 1.25rem;
+}
+
+/* Three equal columns to maximize space */
+.stockyard-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    width: 100%;
+    align-items: start;
+}
+
+/* Individual stockyard cards */
+.stockyard-photo-placeholder {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Consistent image dimensions */
+.placeholder-frame {
+    width: 100%;
+    height: 260px;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Images fill their containers */
+.placeholder-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Captions */
+.stockyard-photo-placeholder figcaption {
+    padding-top: 0.65rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Tablet: two columns */
+@media (max-width: 900px) {
+    .stockyard-photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile: one column */
+@media (max-width: 560px) {
+    .stockyard-photo-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .placeholder-frame {
+        height: 240px;
+    }
+}
+
+/* video */
+/* Hero background video */
+.hero-panel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.hero-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+/* Keep badges above the video */
+.hero-panel .overlay-badges {
+    position: absolute;
+    z-index: 2;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+/* Responsive video */
+@media (max-width: 768px) {
+    .hero-video {
+        min-height: 250px;
+    }
+}
+/* =================================
+   CLICKABLE HERO VIDEO
+================================= */
+
+.hero-video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+    background: #111;
+}
+
+/* Video preview */
+.hero-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+/* Dark overlay */
+.hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.08),
+        rgba(0, 0, 0, 0.48)
+    );
+
+    transition: opacity 0.3s ease;
+}
+
+/* Play button */
+.hero-play-button {
+    width: 82px;
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.hero-play-button:hover {
+    transform: scale(1.12);
+    background: #f59e0b;
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.45);
+}
+
+.hero-play-button:focus-visible {
+    outline: 3px solid #fbbf24;
+    outline-offset: 5px;
+}
+
+/* Play icon */
+.hero-play-button svg {
+    margin-left: 4px;
+}
+
+/* Video label */
+.hero-video-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Status dot */
+.video-status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #f59e0b;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.7);
+}
+
+/* Hide overlay while video plays */
+.hero-video-container.is-playing .hero-video-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Keep capability badges above the video */
+.hero-video-container .overlay-badges {
+    z-index: 3;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide badges during playback */
+.hero-video-container.is-playing .overlay-badges {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-video {
+        min-height: 250px;
+    }
+
+    .hero-play-button {
+        width: 68px;
+        height: 68px;
+    }
+
+    .hero-play-button svg {
+        width: 27px;
+        height: 27px;
+    }
+
+    .hero-video-label {
+        font-size: 12px;
+    }
+}

@@ -17,10 +17,10 @@
   <header class="site-header">
     <div class="container header-wrap">
       <a class="brand" href="#home" aria-label="VIBRA Coal Power Corp home">
-        <img class="brand-mark" src="assets/images/vibra-logo.png" alt="VIBRA Coal Power Corp logo" />
+        <img class="brand-mark" src="assets/images/Logo.png" alt="VIBRA Coal Power Corp logo" />
         <div class="brand-copy">
           <div class="brand-name">VIBRA</div>
-          <div class="brand-sub">Coal Power Corp</div>
+          <div class="brand-sub">Coal Power Corporation</div>
         </div>
       </a>
 
@@ -63,28 +63,91 @@
 
   <main id="main-content">
     <section id="home" class="page-anchor page-hero page-banner">
-      <div class="container hero-inner">
+    <div class="container hero-inner">
+
         <div class="hero-copy">
-          <div class="eyebrow">VIBRA Coal Power Corp</div>
-          <h1>Coal supply for industrial boiler operators and end-users</h1>
-          <p class="lead">VIBRA supplies local and imported coal, provides coal sizing support, and coordinates delivery for partner clients across industrial operations.</p>
-          <p class="tagline">Fuels your business success</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Request a Quote</a>
-            <a class="button button-secondary" href="#products">View Coal Products</a>
-          </div>
+            <div class="eyebrow">VIBRA Coal Power Corporation</div>
+
+            <h1>Coal supply for industrial boiler operators and end-users</h1>
+
+            <p class="lead">
+                VIBRA supplies local and imported coal, provides coal sizing
+                support, and coordinates delivery for partner clients across
+                industrial operations.
+            </p>
+
+            <p class="tagline">Fuels your business success</p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="#contact">
+                    Request a Quote
+                </a>
+
+                <a class="button button-secondary" href="#products">
+                    View Coal Products
+                </a>
+            </div>
         </div>
 
-        <div class="hero-panel visual-card">
-          <img class="hero-image" src="assets/images/hero-coal-yard.jpg" alt="Coal background from VIBRA brochure" />
-          <div class="visual-badges overlay-badges" aria-label="Key capabilities">
-            <span>DOE-accredited Coal Trader</span>
-            <span>Local &amp; Imported Coal</span>
-            <span>Coal Sizing</span>
-          </div>
+        <!-- Hero Background Video -->
+       <!-- Clickable Hero Video -->
+<div class="hero-panel visual-card hero-video-container">
+
+    <video
+        class="hero-video"
+        id="heroVideo"
+        preload="metadata"
+        playsinline
+        poster="assets/images/hero-coal-yard.jpg"
+        aria-label="VIBRA coal storage and stockyard operations"
+    >
+        <source
+            src="assets/images/Video.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Video overlay -->
+    <div class="hero-video-overlay" id="heroVideoOverlay">
+
+        <button
+            type="button"
+            class="hero-play-button"
+            id="heroPlayButton"
+            aria-label="Play stockyard video"
+        >
+            <svg
+                class="play-icon"
+                viewBox="0 0 24 24"
+                width="32"
+                height="32"
+                fill="currentColor"
+                aria-hidden="true"
+            >
+                <path d="M8 5v14l11-7z"></path>
+            </svg>
+        </button>
+
+        <div class="hero-video-label">
+            <span class="video-status-dot"></span>
+            <span>Watch Our Stockyard Operations</span>
         </div>
-      </div>
-    </section>
+
+    </div>
+
+    <!-- Existing capability badges -->
+    <div class="visual-badges overlay-badges"
+         aria-label="Key capabilities">
+        <span>DOE-accredited Coal Trader</span>
+        <span>Local &amp; Imported Coal</span>
+        <span>Coal Sizing</span>
+    </div>
+
+</div>
+
+    </div>
+</section>
 
     <section id="about" class="page-anchor section-tight">
       <div class="container split">
@@ -92,7 +155,7 @@
           <div class="eyebrow">About Us</div>
           <h2>Vibra Coal Power Corporation</h2>
           <p>Vibra Coal Power Corporation (VCPC) is a duly accredited coal trader by the Department of Energy and a registered private corporation headquartered in Greenhills, San Juan City.</p>
-          <p>Established in 2020, VIBRA operates with a coal yard in Brgy. Puting Bato, Calaca, Batangas to support demand in South Luzon and reduce logistics limitations for partner clients.</p>
+          <p>Established in 2020, VIBRA operates with a coal yard in Brgy. Dacanlao, City of Calaca, Batangas 4212 to support demand in South Luzon and reduce logistics limitations for partner clients.</p>
         </article>
         <div class="stack-layout">
           <article class="list-card">
@@ -123,7 +186,7 @@
             <h3>Locally sourced steam coal</h3>
             <p>Our local coal is sourced from Semirara Coal Corporation in Semirara Island, Antique. Local sourcing helps support supply availability within the country.</p>
             <ul class="spec-list">
-              <li><strong>Calorific value:</strong> 5400 to 5800 Kcal/kg ADB</li>
+              <li><strong>Calorific value:</strong> 5300 to 5600 Kcal/kg ADB</li>
               <li><strong>Ash content:</strong> 5-9%</li>
               <li><strong>Moisture content:</strong> 20-30%</li>
             </ul>
@@ -186,7 +249,7 @@
           <article class="metric-card"><strong>Delivery</strong><div class="small-label">Industrial steam coal delivery</div></article>
         </div>
 
-        <div class="split content-spacer">
+        <!-- <div class="split content-spacer">
           <article class="panel">
             <div class="eyebrow">Coal Stockyard Capacity</div>
             <h2>Coal Storage Facility</h2>
@@ -200,8 +263,82 @@
           <article class="image-card">
             <img src="assets/images/DISCHARGING 2.jpg" alt="Coal yard and cargo shipment reference image" />
           </article>
+        </div> -->
+         <div class="split content-spacer">
+          <article class="panel">
+            <div class="eyebrow">Coal Stockyard Capacity</div>
+            <h2>Coal Storage Facility</h2>
+            <p>VIBRA's coal yard storage can accommodate 1-2 barges of coal shipment volume, amounting to approximately 22 thousand tons.</p>
+            <ul class="list-clean">
+              <li><span>Storage support for bulk coal requirements</span></li>
+              <li><span>Location in Brgy. Dancanlao, City of Calaca, Batangas, 4212</span></li>
+              <li><span>Coal sizing and delivery coordination for industrial users</span></li>
+            </ul>
+          </article>
+          <div class="stockyard-placeholder image-card" role="img" aria-label="Placeholder for coal storage facility photo">
+             <img src="assets/images/DISCHARGING 2.jpg" alt="Coal yard and cargo shipment reference image" />
+          </div>
         </div>
-      </div>
+
+       <div class="stockyard-gallery content-spacer">
+    <div class="stockyard-gallery-head">
+        <div class="eyebrow">Coal Storage Facility</div>
+        <h2>Our Stockyards</h2>
+        <p>Photos of VIBRA's coal storage and stockyard locations.</p>
+    </div>
+
+    <div class="stockyard-photo-grid">
+
+        <!-- Mabini Stockyard -->
+        <figure class="stockyard-photo-placeholder">
+            <div class="placeholder-frame">
+                <img
+                    src="assets/images/Facility/Mabini Stockyard.png"
+                    alt="Mabini, Batangas Stockyard"
+                    loading="lazy"
+                >
+            </div>
+            <figcaption>Mabini, Batangas Stockyard</figcaption>
+        </figure>
+
+        <!-- Calaca Stockyard -->
+        <figure class="stockyard-photo-placeholder">
+            <div class="placeholder-frame">
+                <img
+                    src="assets/images/Facility/Calaca Stockyard.png"
+                    alt="Calaca, Batangas Stockyard"
+                    loading="lazy"
+                >
+            </div>
+            <figcaption>Calaca, Batangas Stockyard</figcaption>
+        </figure>
+
+        <!-- Manila Stockyard -->
+        <figure class="stockyard-photo-placeholder">
+            <div class="placeholder-frame">
+                <img
+                    src="assets/images/Facility/Manila Stockyard.png"
+                    alt="Manila Stockyard"
+                    loading="lazy"
+                >
+            </div>
+            <figcaption>Manila Stockyard</figcaption>
+        </figure>
+
+        <!-- Coal Storage Structure
+        <figure class="stockyard-photo-placeholder">
+            <div class="placeholder-frame">
+                <img
+                    src="assets/images/Facility/Manila Stockyard 2.png"
+                    alt="Coal Storage Structure"
+                    loading="lazy"
+                >
+            </div>
+            <figcaption>Coal Storage Structure</figcaption>
+        </figure> -->
+
+    </div>
+</div>
     </section>
 
     <section id="operations" class="section-tight">
@@ -397,7 +534,11 @@
           <div class="contact-list">
             <div class="contact-item">
               <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
-              <div><strong>Location</strong><p>Brgy. Dancanlao, City of Calaca, Batangas, 4212</p></div>
+              <div><strong>Stockyards Location</strong><br>
+Brgy. Dacanlao, City of Calaca, Batangas </br>
+Blk 2, Lot 1, Manila Harbour Centre, Tondo, Manila</br>
+Brgy. San Juan, Mabini, Batangas
+</p></div>
             </div>
             <div class="contact-item">
               <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l8-4 6 3v15"></path><path d="M9 9h1"></path><path d="M9 13h1"></path><path d="M9 17h1"></path></svg></div>
@@ -458,7 +599,7 @@
           <img class="brand-mark" src="assets/images/vibra-logo.png" alt="VIBRA Coal Power Corp logo" />
           <div class="brand-copy">
             <div class="brand-name">VIBRA</div>
-            <div class="brand-sub">Coal Power Corp</div>
+            <div class="brand-sub">Coal Power Corporation</div>
           </div>
         </a>
         <p class="muted content-spacer">Coal supply, coal sizing, yard storage, and delivery coordination for industrial clients.</p>
@@ -490,7 +631,7 @@
       </div>
     </div>
     <div class="container footer-meta">
-      <span>&copy; <span data-current-year></span> VIBRA Coal Power Corp. All rights reserved.</span>
+      <span>&copy; <span data-current-year></span> VIBRA Coal Power Corporation. All rights reserved.</span>
       <span>Fuels your business success.</span>
     </div>
   </footer>

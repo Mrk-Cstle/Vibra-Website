@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIBRA Coal Power Corp | Coal Supply, Sizing & Delivery</title>
+  <meta name="description" content="VIBRA Coal Power Corp supplies local and imported coal for industrial boiler operators and end-users, with coal sizing, yard storage, and delivery coordination." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Public+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .stockyard-placeholder,
+    .placeholder-frame {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.55rem;
+      min-height: 250px;
+      padding: 1.5rem;
+      text-align: center;
+      color: #64748b;
+      background: #f8fafc;
+      border: 2px dashed #94a3b8;
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+    .stockyard-placeholder .placeholder-icon,
+    .placeholder-frame > span {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid #cbd5e1;
+      border-radius: 50%;
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+    .stockyard-placeholder small { color: #94a3b8; }
+    .stockyard-gallery { margin-top: 2.5rem; }
+    .stockyard-gallery-head { margin-bottom: 1.25rem; }
+    .stockyard-photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+    .stockyard-photo-placeholder { min-width: 0; margin: 0; }
+    .placeholder-frame { min-height: 210px; }
+    .stockyard-photo-placeholder figcaption {
+      padding-top: 0.65rem;
+      color: inherit;
+      font-weight: 600;
+    }
+    @media (max-width: 640px) {
+      .stockyard-photo-grid { grid-template-columns: 1fr; }
+      .stockyard-placeholder { min-height: 210px; }
+    }
+  </style>
+
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="#home" aria-label="VIBRA Coal Power Corp home">
+        <img class="brand-mark" src="assets/images/vibra-logo.png" alt="VIBRA Coal Power Corp logo" />
+        <div class="brand-copy">
+          <div class="brand-name">VIBRA</div>
+          <div class="brand-sub">Coal Power Corporation</div>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Coal Products</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="mobilePanel"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <svg data-menu-icon viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="container mobile-panel" id="mobilePanel" data-mobile-panel>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Coal Products</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="page-anchor page-hero page-banner">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">VIBRA Coal Power Corporation</div>
+          <h1>Coal supply for industrial boiler operators and end-users</h1>
+          <p class="lead">VIBRA supplies local and imported coal, provides coal sizing support, and coordinates delivery for partner clients across industrial operations.</p>
+          <p class="tagline">Fuels your business success</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Request a Quote</a>
+            <a class="button button-secondary" href="#products">View Coal Products</a>
+          </div>
+        </div>
+
+        <div class="hero-panel visual-card">
+          <img class="hero-image" src="assets/images/hero-coal-yard.jpg" alt="Coal background from VIBRA brochure" />
+          <div class="visual-badges overlay-badges" aria-label="Key capabilities">
+            <span>DOE-accredited Coal Trader</span>
+            <span>Local &amp; Imported Coal</span>
+            <span>Coal Sizing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page-anchor section-tight">
+      <div class="container split">
+        <article class="panel">
+          <div class="eyebrow">About Us</div>
+          <h2>Vibra Coal Power Corporation</h2>
+          <p>Vibra Coal Power Corporation (VCPC) is a duly accredited coal trader by the Department of Energy and a registered private corporation headquartered in Greenhills, San Juan City.</p>
+          <p>Established in 2020, VIBRA operates with a coal yard in Brgy. Dacanlao, City of Calaca, Batangas 4212 to support demand in South Luzon and reduce logistics limitations for partner clients.</p>
+        </article>
+        <div class="stack-layout">
+          <article class="list-card">
+            <div class="eyebrow">Mission</div>
+            <h3>Better fuel options for industrial operations</h3>
+            <p>To provide better fuel options for industrial coal boiler operators and end-users that will later be translated to huge savings for our partner clients.</p>
+          </article>
+          <article class="list-card">
+            <div class="eyebrow">Vision</div>
+            <h3>Best value, products, and support</h3>
+            <br>To be able to provide the best products and services to our partner clients and give them the best value for their money. </br> To provide high-quality technical support and promote efficient coal-to-steam output ratio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="page-anchor section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Product Line</div>
+          <h2>Local and imported coal supply</h2>
+          <p>VIBRA supplies coal options for Philippine manufacturing industries, boiler operators, and industrial end-users.</p>
+        </div>
+
+        <div class="grid-2 product-grid">
+          <article class="service-card product-card">
+            <div class="badge-row"><span class="badge">Local Coal</span><span class="badge">Semirara Coal</span></div>
+            <h3>Locally sourced steam coal</h3>
+            <p>Our local coal is sourced from Semirara Coal Corporation in Semirara Island, Antique. Local sourcing helps support supply availability within the country.</p>
+            <ul class="spec-list">
+              <li><strong>Calorific value:</strong> 5300 to 5600 Kcal/kg ADB</li>
+              <li><strong>Ash content:</strong> 5-9%</li>
+              <li><strong>Moisture content:</strong> 20-30%</li>
+            </ul>
+          </article>
+          <article class="service-card product-card">
+            <div class="badge-row"><span class="badge">Imported Coal</span><span class="badge">Indonesian Coal</span></div>
+            <h3>Imported coal for stable supply</h3>
+            <p>VIBRA imports coal from Indonesian coal mines to provide stable supply at a competitive price for industrial requirements.</p>
+            <ul class="spec-list">
+              <li><strong>Calorific value:</strong> 5800 to 6300 Kcal/kg ADB</li>
+              <li><strong>Ash content:</strong> 3-7%</li>
+              <li><strong>Moisture content:</strong> 25-30%</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="section-head content-spacer sizing-head">
+          <div class="eyebrow">Coal Sieving Facility</div>
+          <h2>Available coal sizes</h2>
+          <p>VIBRA provides coal sieving and sizing services to match boiler requirements and customer demand.</p>
+        </div>
+
+        <div class="grid-3 image-grid">
+          <article class="coal-card">
+            <img src="assets/images/coal-grate-size.jpg" alt="Grate size coal, 0 to 2 inches" />
+            <div class="coal-card-body">
+              <h3>Grate Size <span>(1-3")</span></h3>
+              <p>Recommended for users with chain grate boilers.</p>
+            </div>
+          </article>
+          <article class="coal-card">
+            <img src="assets/images/coal-picked-size.jpg" alt="Picked size coal, 2 to 4 inches" />
+            <div class="coal-card-body">
+              <h3>Picked Size <span>(1-4")</span></h3>
+              <p>Recommended for users with coal crushers or fixed grate boilers.</p>
+            </div>
+          </article>
+          <article class="coal-card">
+            <img src="assets/images/coal-special-size.jpg" alt="Special size coal, 0 to 1 inch" />
+            <div class="coal-card-body">
+              <h3>Special Size <span>(0-1.5")</span></h3>
+              <p>Recommended for fluidized bed boilers and step grate boilers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="page-anchor section-tight">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Services &amp; Facilities</div>
+          <h2>Coal trading, sizing, storage, and delivery support</h2>
+        </div>
+
+        <div class="grid-4 service-summary">
+          <article class="metric-card"><strong>Supply</strong><div class="small-label">Industrial coal / steam coal</div></article>
+          <article class="metric-card"><strong>Sizing</strong><div class="small-label">Coal sieving services</div></article>
+          <article class="metric-card"><strong>Yard</strong><div class="small-label">1 hectare coal yard</div></article>
+          <article class="metric-card"><strong>Delivery</strong><div class="small-label">Industrial steam coal delivery</div></article>
+        </div>
+
+        <div class="split content-spacer">
+          <article class="panel">
+            <div class="eyebrow">Coal Stockyard Capacity</div>
+            <h2>Coal Storage Facility</h2>
+            <p>VIBRA's coal yard storage can accommodate 1-2 barges of coal shipment volume, amounting to approximately 22 thousand tons.</p>
+            <ul class="list-clean">
+              <li><span>Storage support for bulk coal requirements</span></li>
+              <li><span>Location in Brgy. Dancanlao, City of Calaca, Batangas, 4212</span></li>
+              <li><span>Coal sizing and delivery coordination for industrial users</span></li>
+            </ul>
+          </article>
+          <div class="stockyard-placeholder" role="img" aria-label="Placeholder for coal storage facility photo">
+            <span class="placeholder-icon" aria-hidden="true">＋</span>
+            <strong>Add coal storage facility image here</strong>
+            <small>Replace this placeholder with your image</small>
+          </div>
+        </div>
+
+        <div class="stockyard-gallery content-spacer">
+          <div class="stockyard-gallery-head">
+            <div class="eyebrow">Coal Storage Facility</div>
+            <h2>Our Stockyards</h2>
+            <p>Photos of VIBRA's coal storage and stockyard locations.</p>
+          </div>
+          <div class="stockyard-photo-grid">
+            <figure class="stockyard-photo-placeholder">
+              <div class="placeholder-frame"><span aria-hidden="true">＋</span><strong>Add image here</strong></div>
+              <figcaption>Mabini, Batangas Stockyard</figcaption>
+            </figure>
+            <figure class="stockyard-photo-placeholder">
+              <div class="placeholder-frame"><span aria-hidden="true">＋</span><strong>Add image here</strong></div>
+              <figcaption>Calaca, Batangas Stockyard</figcaption>
+            </figure>
+            <figure class="stockyard-photo-placeholder">
+              <div class="placeholder-frame"><span aria-hidden="true">＋</span><strong>Add image here</strong></div>
+              <figcaption>Manila Stockyard</figcaption>
+            </figure>
+            <figure class="stockyard-photo-placeholder">
+              <div class="placeholder-frame"><span aria-hidden="true">＋</span><strong>Add image here</strong></div>
+              <figcaption>Coal Storage Structure</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="operations" class="section-tight">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Operations Gallery</div>
+          <h2>Vessel arrival, dispatching, discharging, and unloading</h2>
+          <!-- <p>A simple automatic image carousel for your operation photos. You can replace these placeholder images anytime with actual vessel and cargo handling photos.</p> -->
+        </div>
+
+        <div class="operations-carousel" data-carousel>
+          <div class="carousel-frame">
+            <article class="carousel-slide active" data-slide>
+              <img src="assets/images/MV GUO SHUN 1.jpg" alt="Vessel arrival and dispatching operations" />
+              <div class="carousel-caption">
+                <span class="badge">01</span>
+                <h3>Vessel Arrival</h3>
+                <!-- <p>Use this slide for vessel arrival, berthing, dispatch coordination, and shipment preparation photos.</p> -->
+              </div>
+            </article>
+             <article class="carousel-slide active" data-slide>
+              <img src="assets/images/Arrival2.jpg" alt="Vessel arrival and dispatching operations" />
+              <div class="carousel-caption">
+                <span class="badge">02</span>
+                <h3>Vessel Arrival</h3>
+                <!-- <p>Use this slide for vessel arrival, berthing, dispatch coordination, and shipment preparation photos.</p> -->
+              </div>
+            </article>
+            <article class="carousel-slide" data-slide>
+              <img src="assets/images/DISCHARGING.jpg" alt="Coal discharging operations" />
+              <div class="carousel-caption">
+                <span class="badge">03</span>
+                <h3>Discharging</h3>
+                <!-- <p>Use this slide for coal discharge, cargo transfer, crane activity, and stockyard handling photos.</p> -->
+              </div>
+            </article>
+               <article class="carousel-slide" data-slide>
+              <img src="assets/images/Discharging2.jpg" alt="Coal discharging operations" />
+              <div class="carousel-caption">
+                <span class="badge">04</span>
+                <h3>Discharging</h3>
+                <!-- <p>Use this slide for coal discharge, cargo transfer, crane activity, and stockyard handling photos.</p> -->
+              </div>
+            </article>
+            <article class="carousel-slide" data-slide>
+              <img src="assets/images/semirara hauling.jpg" alt="Coal unloading operations" />
+              <div class="carousel-caption">
+                <span class="badge">05</span>
+                <h3>Unloading</h3>
+                <!-- <p>Use this slide for unloading, truck transfer, delivery receiving, and site handling photos.</p> -->
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-arrow" type="button" data-prev aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+            </button>
+            <div class="carousel-dots" role="tablist" aria-label="Operations gallery navigation">
+              <button class="active" type="button" data-dot="0" aria-label="Show vessel arrival and dispatching slide" aria-selected="true"></button>
+              <button type="button" data-dot="1" aria-label="Show discharging slide" aria-selected="false"></button>
+              <button type="button" data-dot="2" aria-label="Show unloading slide" aria-selected="false"></button>
+               <button type="button" data-dot="3" aria-label="Show unloading slide" aria-selected="false"></button>
+                <button type="button" data-dot="4" aria-label="Show unloading slide" aria-selected="false"></button>
+            </div>
+            <button class="carousel-arrow" type="button" data-next aria-label="Next slide">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section-tight">
+      <div class="container split">
+        <article class="image-card">
+          <img src="assets/images/boiler-operation.jpg" alt="Industrial boiler operation reference image" />
+        </article>
+        <article class="panel">
+          <div class="eyebrow">Who We Serve</div>
+          <h2>Built for fuel buyers who need fast, clear answers.</h2>
+          <p>This website now keeps the message direct: what coal products are available, what sizes are offered, where the yard is located, and how customers can inquire.</p>
+          <div class="badge-row">
+            <span class="badge">Boiler Operators</span>
+            <span class="badge">Manufacturing Plants</span>
+            <span class="badge">Industrial End-users</span>
+            <span class="badge">Steam Coal Buyers</span>
+          </div>
+        </article>
+      </div>
+    </section> -->
+
+   <!-- <section id="clients" class="page-anchor section">
+    <div class="container">
+        <div class="section-head">
+            <div class="eyebrow">Client References</div>
+            <h2>Companies that have used VIBRA's services.</h2>
+            <p>The following companies have utilized VIBRA's services.</p>
+        </div>
+
+        <div class="client-grid">
+
+            <div class="client-card">
+                <img src="assets/images/clients/far-east-alcohol.png" alt="Far East Alcohol Corporation">
+                <span>Far East Alcohol Corporation</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/progreen.png" alt="Progreen Agricorp Inc.">
+                <span>Progreen Agricorp Inc.</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/asia-brewery.png" alt="Asia Brewery Incorporated">
+                <span>Asia Brewery Incorporated</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/pampangas-best.png" alt="Pampanga's Best">
+                <span>Pampanga's Best</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/profoods.png" alt="Profoods International Corp.">
+                <span>Profoods International Corp.</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/mets.png" alt="Mets Innovative Solutions Inc.">
+                <span>Mets Innovative Solutions Inc.</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/tantuco.png" alt="Tantuco Enterprises, Inc.">
+                <span>Tantuco Enterprises, Inc.</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/sumopak.png" alt="Sumopak Industrial Corporation">
+                <span>Sumopak Industrial Corporation</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/jnt-oil.png" alt="JNJ Oil Industries, Inc.">
+                <span>JNJ Oil Industries, Inc.</span>
+            </div>
+
+            <div class="client-card">
+                <img src="assets/images/clients/absolut.png" alt="Absolut Distillers, Inc.">
+                <span>Absolut Distillers, Inc.</span>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+<section id="clients" class="page-anchor section">
+    <div class="container">
+        <div class="section-head">
+            <div class="eyebrow">Client References</div>
+            <h2>Our Client Portfolio</h2>
+            <p>
+                Due to the confidentiality and privacy agreements with our clients,
+                we do not publicly disclose the companies we have served.
+                Client references and project portfolios are available upon request
+                for qualified business inquiries.
+            </p>
+        </div>
+
+        <div class="client-available">
+            <div class="available-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Available Upon Request</h3>
+                <p>
+                    We respect the privacy of our clients and maintain strict
+                    confidentiality regarding our business engagements. References
+                    and company information can be provided upon request during
+                    formal business discussions.
+                </p>
+
+                <!-- <a href="#contact" class="btn btn-primary">
+                    Request Client References
+                </a> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="page-anchor section-tight" style="margin: 0 10%;">
+     
+        <article class="contact-card">
+          <div class="eyebrow">Contact Us</div>
+          <h2>Request coal supply, sizing, or delivery support</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+              <div><strong>Location</strong><p>Brgy. Dancanlao, City of Calaca, Batangas, 4212</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l8-4 6 3v15"></path><path d="M9 9h1"></path><path d="M9 13h1"></path><path d="M9 17h1"></path></svg></div>
+              <div><strong>Head Office</strong><p>9/F, Unit 905, BTTC Centre, #288 Ortigas Avenue, corner Roosevelt St., Greenhills, San Juan City 1503</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8.09 9.64a16 16 0 0 0 6.27 6.27l1.2-1.2a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92Z"></path></svg></div>
+              <div><strong>Mobile</strong><p><a href="tel:09985375441">09985375441</a><br /><a href="tel:09171833111">09171833111</a></p></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-10 5L2 7"></path></svg></div>
+              <div><strong>Email</strong><p><a href="mailto:info@vibracoal.com">info@vibracoal.com</a>
+                <!-- <br /><a href="mailto:mmb.vcpc@gmail.com">mmb.vcpc@gmail.com</a></p> -->
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.47a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .59 3.68 1 1 0 0 1-.24 1.01l-2.2 2.1Z"></path></svg></div>
+              <div><strong>Landline</strong><p><a href="tel:0286919897">(02) 8691-9897</a></p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- <article class="contact-card">
+          <div class="eyebrow">Inquiry Form</div>
+          <h2>Tell us what coal you need.</h2>
+          <form action="send-inquiry.php" method="POST" data-form="contact" data-success="Thank you. Your inquiry has been noted. Please contact VIBRA directly using the phone or email details for immediate assistance.">
+            <div class="form-grid">
+              <label><span class="field-label">Name</span><input type="text" name="name" placeholder="Your name" required /></label>
+              <label><span class="field-label">Company</span><input type="text" name="company" placeholder="Company name" /></label>
+              <label><span class="field-label">Email</span><input type="email" name="email" placeholder="name@example.com" required /></label>
+              <label><span class="field-label">Phone</span><input type="tel" name="phone" placeholder="Mobile or landline" /></label>
+              <label><span class="field-label">Coal Type</span><select name="coal-type"><option>Local Coal - Semirara</option><option>Imported Coal - Indonesian</option><option>Coal Sizing Service</option><option>General Inquiry</option></select></label>
+              <label><span class="field-label">Estimated Volume</span><input type="text" name="volume" placeholder="e.g. tons per month" /></label>
+            </div>
+            <label class="content-spacer"><span class="field-label">Message</span><textarea name="message" placeholder="Share your required size, volume, delivery location, and schedule."></textarea></label>
+            <button class="button button-primary button-block content-spacer" type="submit">Send Inquiry</button>
+            <div class="status" role="status" aria-live="polite"></div>
+          </form>
+        </article> -->
+   
+    </section>
+
+    <section class="cta-band">
+      <div class="container wrap">
+        <div>
+          <div class="eyebrow">Ready to inquire?</div>
+          <h2>Contact VIBRA for coal supply and sizing requirements</h2>
+        </div>
+        <a class="button button-primary" href="mailto:info@vibracoal.com">Email VIBRA</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#home" aria-label="VIBRA Coal Power Corp home">
+          <img class="brand-mark" src="assets/images/vibra-logo.png" alt="VIBRA Coal Power Corp logo" />
+          <div class="brand-copy">
+            <div class="brand-name">VIBRA</div>
+            <div class="brand-sub">Coal Power Corporation</div>
+          </div>
+        </a>
+        <p class="muted content-spacer">Coal supply, coal sizing, yard storage, and delivery coordination for industrial clients.</p>
+      </div>
+      <div>
+        <h3>Products</h3>
+        <div class="footer-list">
+          <a href="#products">Local Coal - Semirara</a>
+          <a href="#products">Imported Coal - Indonesian</a>
+          <a href="#products">Coal Sizing</a>
+        </div>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <div class="footer-list">
+          <a href="#about">About</a>
+          <a href="#services">Services &amp; Facilities</a>
+          <a href="#clients">Client References</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-list">
+          <a href="tel:09985375441">09985375441</a>
+          <a href="tel:09171833111">09171833111</a>
+          <a href="mailto:info@vibracoal.com">info@vibracoal.com</a>
+          <a href="#contact">View Contact Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-meta">
+      <span>&copy; <span data-current-year></span> VIBRA Coal Power Corporation. All rights reserved.</span>
+      <span>Fuels your business success.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
